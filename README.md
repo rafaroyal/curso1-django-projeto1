@@ -45,4 +45,12 @@ python manage.py starapp {colocar o nome do app qualquer}
   
   criar chave ssh: ssh-keygen
   
+  git add *
+  
+  git commit -m "mensagem"
+  
+  git push
+  
+  
+  
   
