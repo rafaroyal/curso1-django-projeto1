@@ -22,10 +22,10 @@ django-admin startproject {coloca o nome do projeto qualquer} .
 ## PARA INICIAR UM SERVDOR LOCAL
 python manage.py runserver
 
-## PARA INICIAR UMA APLICAÇÃO
+## PARA CRIAR UMA APLICAÇÃO (OU NOVA URL)
 python manage.py starapp {colocar o nome do app qualquer}
 
-## PARA CRIAR NAMESPACE
+## PARA CRIAR NAMESPACE DE ARQUIVO STATIC
 python manage.py collectstatic
 
 
