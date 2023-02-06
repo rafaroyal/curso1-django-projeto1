@@ -25,7 +25,8 @@ python manage.py runserver
 ## PARA INICIAR UMA APLICAÇÃO
 python manage.py starapp {colocar o nome do app qualquer}
 
-
+## PARA CRIAR NAMESPACE
+python manage.py collectstatic
 
 
   # COMANDOS VISUAL STUDIO CODE
