@@ -25,6 +25,12 @@ python manage.py runserver
 ## PARA CRIAR UMA APLICAÇÃO (OU NOVA URL)
 python manage.py starapp {colocar o nome do app qualquer}
 
+## PARA CRIAR TABELAS NO BANCO DE DADOS SQL LITE
+python manage.py migrate
+
+## PARA CRIAR UM USUÁRIO ADMIN DO DJANGO
+python manage.py createsuperuser
+
 ## PARA CRIAR NAMESPACE DE ARQUIVO STATIC
 python manage.py collectstatic
 
