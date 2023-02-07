@@ -28,6 +28,9 @@ python manage.py starapp {colocar o nome do app qualquer}
 ## PARA CRIAR TABELAS NO BANCO DE DADOS SQL LITE
 python manage.py migrate
 
+## PARA PROPAGAR ALTERAÇÕES FEITAS NO MODELS.PY
+python manage.py makemigrations
+
 ## PARA CRIAR UM USUÁRIO ADMIN DO DJANGO
 python manage.py createsuperuser
 
