@@ -1,20 +1,26 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from . import models
+# from django.http import HttpResponse
 # Create your views here.
 
 
 def home(request):
-    res = render(request, 'receitas/home.html', context={
-        'nome': 'Rafael'
+    receitas = models.Receita.objects.all()
+    res = render(request, 'receitas/paginas/receitas-home.html', context={
+        'receita': receitas
+    })
+    return res
+
+def categoria(request, categoria_id):
+    receitas = models.Receita.objects.filter(categoria__id=categoria_id)
+    res = render(request, 'receitas/paginas/receitas-home.html', context={
+        'receita': receitas
     })
     return res
 
 
-def sobre(request):
-    res = HttpResponse('sobre')
-    return res
-
-
-def contato(request):
-    res = HttpResponse("contato")
+def receitas(request, id):
+    res = render(request, 'receitas/paginas/receita-view.html', context={
+        'nome': 'Rafael'
+    })
     return res
